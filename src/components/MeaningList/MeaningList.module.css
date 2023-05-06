@@ -1,0 +1,17 @@
+.heading {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #757575;
+}
+
+.item {
+  font-size: 15px;
+}
+.item::marker {
+  color: #a445ed;
+}
+
+.exampleSentence {
+  color: #757575;
+  font-style: italic;
+}

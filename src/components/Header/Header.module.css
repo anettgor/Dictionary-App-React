@@ -1,0 +1,33 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.switchContainer {
+  background-color: #757575;
+  border-radius: 20px;
+  width: 30px;
+  height: 16px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.switch {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.input {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+}

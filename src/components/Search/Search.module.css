@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+
+  margin-bottom: 30px;
+  width: 80vw;
+}
+.input {
+  border-radius: 18px;
+  padding: 15px 20px;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  background-color: #f6f6f6;
+  font-family: inherit;
+}
+.input:focus {
+  outline: none;
+  border: 1px solid #a445ed;
+}
+
+.submit {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 25%;
+  right: -30px;
+}
