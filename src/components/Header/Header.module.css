@@ -4,30 +4,54 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.wrapper {
+.switchIcon {
+  fill: #757575;
+  transition: fill 350ms ease-in-out;
+}
+
+.input {
+  opacity: 0;
+  position: absolute;
+  top: -90000;
+}
+
+.label {
+  position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
   gap: 5px;
 }
-.switchContainer {
+.label::before {
+  content: '';
   background-color: #757575;
   border-radius: 20px;
   width: 30px;
   height: 16px;
   padding: 2px 5px;
   cursor: pointer;
+  transition: background-color 350ms ease-in-out;
 }
-.switch {
+
+.label::after {
+  content: '';
   width: 16px;
   height: 16px;
   background-color: #ffffff;
   border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  transition: transform 350ms ease-in-out;
 }
 
-.input {
-  /* opacity: 0; */
-  background-color: transparent;
+.input:checked + .label::after {
+  transform: translateX(100%);
 }
-.input:checked + label {
-  color: red;
+
+.input:checked + .label::before {
+  background-color: #a445ed;
+}
+
+.input:checked + .label > .switchIcon {
+  fill: #a445ed;
 }

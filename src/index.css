@@ -7,8 +7,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 130%;
-  /* background-color: #050505;
-  color: white; */
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #050505;
+    color: white;
+  }
 }
 
 code {

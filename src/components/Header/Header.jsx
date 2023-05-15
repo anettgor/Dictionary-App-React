@@ -5,19 +5,10 @@ function Header() {
   return (
     <div className={css.headerContainer}>
       <BiBook size={40} fill={'#757575'} />
-
-      <div className={css.wrapper}>
-        <div className={css.switchContainer}>
-          <div className={css.switch}></div>
-          <input
-            type="checkbox"
-            role="switch"
-            aria-checked="false"
-            className={css.input}
-          />
-        </div>
-        <BiMoon size={20} fill={'#757575'} />
-      </div>
+      <input type="checkbox" id="switch-mode" className={css.input} />
+      <label for="switch-mode" className={css.label}>
+        <BiMoon size={20} className={css.switchIcon} />
+      </label>
     </div>
   );
 }
