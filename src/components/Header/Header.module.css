@@ -25,9 +25,9 @@
 }
 
 .input {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+  /* opacity: 0; */
+  background-color: transparent;
+}
+.input:checked + label {
+  color: red;
 }

@@ -4,21 +4,22 @@ import { getWord } from 'redux/selectors';
 import { useSelector } from 'react-redux';
 import SynonymList from 'components/SynonymList/SynonymList';
 function MeaningList({ index }) {
-  const word = useSelector(getWord);
+  const word = useSelector(getWord)[0];
   console.log(word);
+
   return (
     <>
       <h3 className={css.heading}>Meaning</h3>
       <ul>
-        {word[0].meanings[index].definitions.map((definition, index) => (
-          <li key={index} className={css.item}>
-            <p>{definition.definition}</p>
-            <p className={css.exampleSentence}>{definition.example}</p>
-            {definition.synonyms.length > 0 && (
-              <SynonymList synonym={definition.synonyms} />
-            )}
-          </li>
-        ))}
+        {word.meanings[index].definitions.map(
+          ({ definition, synonyms, example }, index) => (
+            <li key={index} className={css.item}>
+              <p>{definition}</p>
+              <p className={css.exampleSentence}>{example}</p>
+              {synonyms.length > 0 && <SynonymList synonym={synonyms} />}
+            </li>
+          )
+        )}
       </ul>
     </>
   );

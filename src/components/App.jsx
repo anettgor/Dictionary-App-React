@@ -1,29 +1,30 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchWord } from './../redux/operations';
-import { getLoading, getWord } from 'redux/selectors';
-import { useSelector } from 'react-redux';
 
-import Result from './Result/Result';
-import Header from './Header/Header';
-import Search from './Search/Search';
+import { Suspense, lazy } from 'react';
+
+const Result = lazy(() => import('./Result/Result'));
+const Header = lazy(() => import('./Header/Header'));
+const Search = lazy(() => import('./Search/Search'));
+
 export const App = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(fetchWord('source'));
   }, [dispatch]);
 
-  const isLoading = useSelector(getLoading);
-  const items = useSelector(getWord);
-
   return (
-    items.length > 0 &&
-    !isLoading && (
-      <div style={{ margin: 20 }}>
+    <div style={{ margin: 20 }}>
+      <Suspense fallback={<div> Loading...</div>}>
         <Header />
         <Search />
+      </Suspense>
+
+      <Suspense fallback={<div> Loading...</div>}>
         <Result />
-      </div>
-    )
+      </Suspense>
+    </div>
   );
 };

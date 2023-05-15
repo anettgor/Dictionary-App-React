@@ -1,6 +1,7 @@
 .container {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 .part {
   margin: 0;

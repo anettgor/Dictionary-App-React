@@ -6,14 +6,14 @@ import MeaningList from 'components/MeaningList/MeaningList';
 import SynonymList from 'components/SynonymList/SynonymList';
 
 function PartOfSpeech() {
-  const word = useSelector(getWord);
-  const meanings = word[0].meanings;
+  const wordArr = useSelector(getWord);
+  const meanings = wordArr[0].meanings;
 
-  return meanings.map((meaning, index) => {
+  return meanings.map(({ partOfSpeech }, index) => {
     return (
       <>
         <div className={css.container} key={index}>
-          <h3 className={css.part}> {meaning.partOfSpeech}</h3>
+          <h3 className={css.part}> {partOfSpeech}</h3>
           <div className={css.border}></div>
         </div>
         <MeaningList index={index} />

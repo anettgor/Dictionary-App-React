@@ -10,9 +10,9 @@
 }
 .listContainer {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-start;
-  flex-wrap: wrap;
+
   list-style: none;
   padding: 0;
 }

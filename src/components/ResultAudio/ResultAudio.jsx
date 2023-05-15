@@ -5,22 +5,24 @@ import { getWord } from 'redux/selectors';
 import { useSelector } from 'react-redux';
 
 function ResultAudio() {
-  const word = useSelector(getWord);
+  const { word, phonetic, phonetics } = useSelector(getWord)[0];
+  const audioSrc = phonetics.find(phonetic => phonetic.audio)?.audio || '';
+  const audio = new Audio(audioSrc);
 
+  const play = () => {
+    audio.play();
+  };
   return (
     <div className={css.container}>
       <div>
-        <h1 className={css.heading}>{word[0].word}</h1>
-        <p className={css.pronounciation}>{word[0].phonetic}</p>
+        <h1 className={css.heading}>{word}</h1>
+        <p className={css.pronounciation}>{phonetic}</p>
       </div>
-      <IoIosPlayCircle size={60} fill={'#a445eddd'} />
-      {/* <audio>
-        <source
-          src="https://api.dictionaryapi.dev/media/pronunciations/en/ethereal-us.mp3"
-          type="audio/mp3"
-        />
-        Your browser does not support the audio element
-      </audio> */}
+      {audioSrc && (
+        <button className={css.button} onClick={play}>
+          <IoIosPlayCircle size={60} fill={'#a445eddd'} />
+        </button>
+      )}
     </div>
   );
 }
