@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Dictionary-App-React/static/css/main.8f427d18.css",
-    "main.js": "/Dictionary-App-React/static/js/main.9cf9f04c.js",
+    "main.js": "/Dictionary-App-React/static/js/main.904d85fb.js",
     "static/css/845.eb81674d.chunk.css": "/Dictionary-App-React/static/css/845.eb81674d.chunk.css",
-    "static/js/845.7158d812.chunk.js": "/Dictionary-App-React/static/js/845.7158d812.chunk.js",
+    "static/js/845.b9562490.chunk.js": "/Dictionary-App-React/static/js/845.b9562490.chunk.js",
     "static/css/9.cfbf4c74.chunk.css": "/Dictionary-App-React/static/css/9.cfbf4c74.chunk.css",
     "static/js/9.10734e4f.chunk.js": "/Dictionary-App-React/static/js/9.10734e4f.chunk.js",
     "static/css/699.f128a040.chunk.css": "/Dictionary-App-React/static/css/699.f128a040.chunk.css",
@@ -15,9 +15,9 @@
     "static/js/692.14a4ed2c.chunk.js": "/Dictionary-App-React/static/js/692.14a4ed2c.chunk.js",
     "index.html": "/Dictionary-App-React/index.html",
     "main.8f427d18.css.map": "/Dictionary-App-React/static/css/main.8f427d18.css.map",
-    "main.9cf9f04c.js.map": "/Dictionary-App-React/static/js/main.9cf9f04c.js.map",
+    "main.904d85fb.js.map": "/Dictionary-App-React/static/js/main.904d85fb.js.map",
     "845.eb81674d.chunk.css.map": "/Dictionary-App-React/static/css/845.eb81674d.chunk.css.map",
-    "845.7158d812.chunk.js.map": "/Dictionary-App-React/static/js/845.7158d812.chunk.js.map",
+    "845.b9562490.chunk.js.map": "/Dictionary-App-React/static/js/845.b9562490.chunk.js.map",
     "9.cfbf4c74.chunk.css.map": "/Dictionary-App-React/static/css/9.cfbf4c74.chunk.css.map",
     "9.10734e4f.chunk.js.map": "/Dictionary-App-React/static/js/9.10734e4f.chunk.js.map",
     "699.f128a040.chunk.css.map": "/Dictionary-App-React/static/css/699.f128a040.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.8f427d18.css",
-    "static/js/main.9cf9f04c.js"
+    "static/js/main.904d85fb.js"
   ]
 }
