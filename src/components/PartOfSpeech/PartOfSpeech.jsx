@@ -1,9 +1,9 @@
 import React from 'react';
-import css from './PartOfSpeech.module.css';
 import { useSelector } from 'react-redux';
 import { getWord } from 'redux/selectors';
 import MeaningList from 'components/MeaningList/MeaningList';
 import SynonymList from 'components/SynonymList/SynonymList';
+import css from './PartOfSpeech.module.css';
 
 function PartOfSpeech() {
   const wordArr = useSelector(getWord);

@@ -1,15 +1,19 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchWord } from './../redux/operations';
-
 import { Suspense, lazy } from 'react';
+import { useSelector } from 'react-redux';
+
+import { fetchWord } from './../redux/operations';
+import { getError } from './../redux/selectors';
 
 const Result = lazy(() => import('./Result/Result'));
 const Header = lazy(() => import('./Header/Header'));
 const Search = lazy(() => import('./Search/Search'));
-
+const NotFound = lazy(() => import('./NotFound/NotFound'));
 export const App = () => {
   const dispatch = useDispatch();
+  const error = useSelector(getError);
+  console.log(error);
 
   useEffect(() => {
     dispatch(fetchWord('source'));
@@ -23,7 +27,7 @@ export const App = () => {
       </Suspense>
 
       <Suspense fallback={<div> Loading...</div>}>
-        <Result />
+        {!error ? <Result /> : <NotFound />}
       </Suspense>
     </div>
   );

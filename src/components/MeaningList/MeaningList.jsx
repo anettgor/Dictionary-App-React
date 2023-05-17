@@ -1,8 +1,8 @@
 import React from 'react';
-import css from './MeaningList.module.css';
 import { getWord } from 'redux/selectors';
 import { useSelector } from 'react-redux';
 import SynonymList from 'components/SynonymList/SynonymList';
+import css from './MeaningList.module.css';
 function MeaningList({ index }) {
   const word = useSelector(getWord)[0];
   console.log(word);

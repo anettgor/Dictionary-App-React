@@ -1,7 +1,7 @@
 import React from 'react';
-import css from './SynonymList.module.css';
 import { useDispatch } from 'react-redux';
 import { fetchWord } from './../../redux/operations';
+import css from './SynonymList.module.css';
 
 function SynonymList({ synonym }) {
   const dispatch = useDispatch();
@@ -10,19 +10,19 @@ function SynonymList({ synonym }) {
     dispatch(fetchWord(word));
   };
   return (
-    <div className={css.listContainer}>
+    <div className={css.container}>
       <h3 className={css.heading}>Synonyms</h3>
-      <div>
+      <ul className={css.listContainer}>
         {synonym.map((word, index) => (
-          <span
+          <li
             className={css.listItem}
             key={index}
             onClick={() => handleClick(word)}
           >
-            {index === 0 ? word : `, ${word}`}
-          </span>
+            {index === 0 ? word : ', ' + word}
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

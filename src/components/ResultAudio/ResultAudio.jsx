@@ -1,8 +1,8 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { IoIosPlayCircle } from 'react-icons/io';
 import css from './ResultAudio.module.css';
 import { getWord } from 'redux/selectors';
-import { useSelector } from 'react-redux';
 
 function ResultAudio() {
   const { word, phonetic, phonetics } = useSelector(getWord)[0];
@@ -12,6 +12,7 @@ function ResultAudio() {
   const play = () => {
     audio.play();
   };
+
   return (
     <div className={css.container}>
       <div>

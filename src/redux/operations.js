@@ -8,7 +8,7 @@ export const fetchWord = createAsyncThunk(
   async (word, thunkApi) => {
     try {
       const response = await axios.get(word);
-
+      console.log(response.data);
       return response.data;
     } catch (err) {
       return thunkApi.rejectWithValue(err);

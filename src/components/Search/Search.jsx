@@ -1,18 +1,22 @@
 import React from 'react';
-import css from './Search.module.css';
-import { HiMagnifyingGlass } from 'react-icons/hi2';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { HiMagnifyingGlass } from 'react-icons/hi2';
 import { fetchWord } from './../../redux/operations';
+import css from './Search.module.css';
 function Search() {
   const [value, setValue] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(fetchWord(value.trim()));
-    e.currentTarget.reset();
-    setValue('');
+    if (!value || value.trim() === '') {
+      alert('Please enter a value');
+    } else {
+      dispatch(fetchWord(value.trim()));
+      e.currentTarget.reset();
+      setValue('');
+    }
   };
 
   return (

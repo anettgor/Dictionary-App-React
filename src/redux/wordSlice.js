@@ -19,6 +19,7 @@ const wordSlice = createSlice({
     [fetchWord.fulfilled](state, action) {
       state.isLoading = false;
       state.items = [...action.payload];
+      state.error = null;
     },
   },
 });

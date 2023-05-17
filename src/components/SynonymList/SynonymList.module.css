@@ -1,18 +1,13 @@
-.container {
-  display: flex;
-  gap: 20px;
-}
 .heading {
   color: #757575;
   font-weight: normal;
   font-size: 16px;
   margin-right: 10px;
 }
-.listContainer {
+.container {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
-
   list-style: none;
   padding: 0;
 }
@@ -21,4 +16,9 @@
   color: #a445ed;
   font-weight: 700;
   cursor: pointer;
+  list-style: none;
+}
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
 }

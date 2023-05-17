@@ -7,14 +7,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 130%;
-  background-color: #e6e6e6;
+  transition: background-color, color 350ms;
+  background-color: #fff;
   color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #050505;
-    color: white;
+  .darkTheme {
+    background-color: #141414;
+    color: #fff;
   }
 }
 
