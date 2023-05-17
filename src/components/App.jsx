@@ -4,7 +4,7 @@ import { Suspense, lazy } from 'react';
 import { useSelector } from 'react-redux';
 
 import { fetchWord } from './../redux/operations';
-import { getError } from './../redux/selectors';
+import { getError, getLoading } from './../redux/selectors';
 
 const Result = lazy(() => import('./Result/Result'));
 const Header = lazy(() => import('./Header/Header'));
@@ -13,11 +13,15 @@ const NotFound = lazy(() => import('./NotFound/NotFound'));
 export const App = () => {
   const dispatch = useDispatch();
   const error = useSelector(getError);
-  console.log(error);
+  const loading = useSelector(getLoading);
 
   useEffect(() => {
     dispatch(fetchWord('source'));
   }, [dispatch]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div style={{ margin: 20 }}>

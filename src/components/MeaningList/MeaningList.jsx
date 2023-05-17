@@ -5,7 +5,6 @@ import SynonymList from 'components/SynonymList/SynonymList';
 import css from './MeaningList.module.css';
 function MeaningList({ index }) {
   const word = useSelector(getWord)[0];
-  console.log(word);
 
   return (
     <>
