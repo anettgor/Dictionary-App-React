@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { Suspense, lazy } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect, Suspense, lazy } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import css from './App.module.css';
+import { setStatusSearch } from './../redux/searchSlice';
 import { fetchWord } from './../redux/operations';
 import { getError, getLoading } from './../redux/selectors';
 
@@ -20,6 +20,7 @@ export const App = () => {
 
   useEffect(() => {
     dispatch(fetchWord('source'));
+    dispatch(setStatusSearch('source'));
   }, [dispatch]);
 
   return (

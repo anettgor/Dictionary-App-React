@@ -1,3 +1,10 @@
 .text {
   color: #757575;
 }
+.word {
+  font-weight: 600;
+  color: #a445ed;
+}
+.heading {
+  line-height: 150%;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchWord } from './../../redux/operations';
+import { setStatusSearch } from './../../redux/searchSlice';
+
 import css from './SynonymList.module.css';
 
 function SynonymList({ synonym }) {
@@ -8,6 +10,7 @@ function SynonymList({ synonym }) {
 
   const handleClick = word => {
     dispatch(fetchWord(word));
+    dispatch(setStatusSearch(word));
   };
   return (
     <div className={css.container}>
