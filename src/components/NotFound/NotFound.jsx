@@ -7,7 +7,7 @@ function NotFound() {
       <h2>No Definitions Found</h2>
       <p className={css.text}>
         Oops! It seems that the word you are looking for cannot be found. Try
-        again later or try with differnt term.
+        again later or search for a different term.
       </p>
     </>
   );
