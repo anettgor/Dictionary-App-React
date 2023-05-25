@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/668.f7fca85a.chunk.css","mappings":"AAAA,sBACE,aACF,CACA,sBAEE,aAAc,CADd,eAEF,CACA,yBACE,gBACF","sources":["components/NotFound/NotFound.module.css"],"sourcesContent":[".text {\n  color: #757575;\n}\n.word {\n  font-weight: 600;\n  color: #a445ed;\n}\n.heading {\n  line-height: 150%;\n}\n"],"names":[],"sourceRoot":""}

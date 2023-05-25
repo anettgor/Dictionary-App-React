@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkdictionary_app_react=self.webpackChunkdictionary_app_react||[]).push([[668],{668:function(e,n,r){r.r(n),r.d(n,{default:function(){return o}});r(791);var t="NotFound_text__OfBlj",a=r(184);var o=function(){return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)("h2",{children:"No Definitions Found"}),(0,a.jsx)("p",{className:t,children:"Oops! It seems that the word you are looking for cannot be found. Try again later or search for a different term."})]})}}}]);
-//# sourceMappingURL=668.b248585b.chunk.js.map

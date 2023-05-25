@@ -1,35 +1,35 @@
 {
   "files": {
     "main.css": "/Dictionary-App-React/static/css/main.b43392dc.css",
-    "main.js": "/Dictionary-App-React/static/js/main.13c929f2.js",
+    "main.js": "/Dictionary-App-React/static/js/main.979859be.js",
     "static/css/845.eb81674d.chunk.css": "/Dictionary-App-React/static/css/845.eb81674d.chunk.css",
-    "static/js/845.b9562490.chunk.js": "/Dictionary-App-React/static/js/845.b9562490.chunk.js",
+    "static/js/845.074ad107.chunk.js": "/Dictionary-App-React/static/js/845.074ad107.chunk.js",
     "static/css/9.cfbf4c74.chunk.css": "/Dictionary-App-React/static/css/9.cfbf4c74.chunk.css",
     "static/js/9.10734e4f.chunk.js": "/Dictionary-App-React/static/js/9.10734e4f.chunk.js",
     "static/css/699.1f7d7087.chunk.css": "/Dictionary-App-React/static/css/699.1f7d7087.chunk.css",
-    "static/js/699.b66f3700.chunk.js": "/Dictionary-App-React/static/js/699.b66f3700.chunk.js",
-    "static/css/668.8be64cb2.chunk.css": "/Dictionary-App-React/static/css/668.8be64cb2.chunk.css",
-    "static/js/668.b248585b.chunk.js": "/Dictionary-App-React/static/js/668.b248585b.chunk.js",
+    "static/js/699.eb749180.chunk.js": "/Dictionary-App-React/static/js/699.eb749180.chunk.js",
+    "static/css/668.f7fca85a.chunk.css": "/Dictionary-App-React/static/css/668.f7fca85a.chunk.css",
+    "static/js/668.a658de82.chunk.js": "/Dictionary-App-React/static/js/668.a658de82.chunk.js",
     "static/js/432.720631b8.chunk.js": "/Dictionary-App-React/static/js/432.720631b8.chunk.js",
     "static/js/479.6b8d8455.chunk.js": "/Dictionary-App-React/static/js/479.6b8d8455.chunk.js",
     "static/js/692.14a4ed2c.chunk.js": "/Dictionary-App-React/static/js/692.14a4ed2c.chunk.js",
     "index.html": "/Dictionary-App-React/index.html",
     "main.b43392dc.css.map": "/Dictionary-App-React/static/css/main.b43392dc.css.map",
-    "main.13c929f2.js.map": "/Dictionary-App-React/static/js/main.13c929f2.js.map",
+    "main.979859be.js.map": "/Dictionary-App-React/static/js/main.979859be.js.map",
     "845.eb81674d.chunk.css.map": "/Dictionary-App-React/static/css/845.eb81674d.chunk.css.map",
-    "845.b9562490.chunk.js.map": "/Dictionary-App-React/static/js/845.b9562490.chunk.js.map",
+    "845.074ad107.chunk.js.map": "/Dictionary-App-React/static/js/845.074ad107.chunk.js.map",
     "9.cfbf4c74.chunk.css.map": "/Dictionary-App-React/static/css/9.cfbf4c74.chunk.css.map",
     "9.10734e4f.chunk.js.map": "/Dictionary-App-React/static/js/9.10734e4f.chunk.js.map",
     "699.1f7d7087.chunk.css.map": "/Dictionary-App-React/static/css/699.1f7d7087.chunk.css.map",
-    "699.b66f3700.chunk.js.map": "/Dictionary-App-React/static/js/699.b66f3700.chunk.js.map",
-    "668.8be64cb2.chunk.css.map": "/Dictionary-App-React/static/css/668.8be64cb2.chunk.css.map",
-    "668.b248585b.chunk.js.map": "/Dictionary-App-React/static/js/668.b248585b.chunk.js.map",
+    "699.eb749180.chunk.js.map": "/Dictionary-App-React/static/js/699.eb749180.chunk.js.map",
+    "668.f7fca85a.chunk.css.map": "/Dictionary-App-React/static/css/668.f7fca85a.chunk.css.map",
+    "668.a658de82.chunk.js.map": "/Dictionary-App-React/static/js/668.a658de82.chunk.js.map",
     "432.720631b8.chunk.js.map": "/Dictionary-App-React/static/js/432.720631b8.chunk.js.map",
     "479.6b8d8455.chunk.js.map": "/Dictionary-App-React/static/js/479.6b8d8455.chunk.js.map",
     "692.14a4ed2c.chunk.js.map": "/Dictionary-App-React/static/js/692.14a4ed2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b43392dc.css",
-    "static/js/main.13c929f2.js"
+    "static/js/main.979859be.js"
   ]
 }
