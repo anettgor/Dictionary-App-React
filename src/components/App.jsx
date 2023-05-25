@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Suspense, lazy } from 'react';
 import { useSelector } from 'react-redux';
-
+import css from './App.module.css';
 import { fetchWord } from './../redux/operations';
 import { getError, getLoading } from './../redux/selectors';
 
@@ -24,7 +24,7 @@ export const App = () => {
   }
 
   return (
-    <div style={{ margin: 20 }}>
+    <div className={css.container}>
       <Suspense fallback={<div> Loading...</div>}>
         <Header />
         <Search />

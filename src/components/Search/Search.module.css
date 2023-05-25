@@ -1,10 +1,12 @@
 .container {
-  width: 80vw;
+  width: 70vw;
   background-color: #f3f3f3;
   display: flex;
   border-radius: 18px;
   padding: 5px 10px;
   margin-bottom: 30px;
+  margin-inline: auto;
+  max-width: 1000px;
 }
 .input {
   font-weight: 700;
