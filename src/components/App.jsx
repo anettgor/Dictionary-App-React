@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Suspense, lazy } from 'react';
 import { useSelector } from 'react-redux';
@@ -10,6 +10,9 @@ const Result = lazy(() => import('./Result/Result'));
 const Header = lazy(() => import('./Header/Header'));
 const Search = lazy(() => import('./Search/Search'));
 const NotFound = lazy(() => import('./NotFound/NotFound'));
+
+const MemoizedResult = React.memo(Result);
+
 export const App = () => {
   const dispatch = useDispatch();
   const error = useSelector(getError);
@@ -20,13 +23,13 @@ export const App = () => {
 
   return (
     <div className={css.container}>
-      <Suspense fallback={<div> fygveargbvrbvyeg</div>}>
+      <Suspense fallback={<div> Loading...</div>}>
         <Header />
         <Search />
       </Suspense>
 
       <Suspense fallback={<div> Loading...</div>}>
-        {!error ? <Result /> : <NotFound />}
+        {!error ? <MemoizedResult /> : <NotFound />}
       </Suspense>
     </div>
   );
