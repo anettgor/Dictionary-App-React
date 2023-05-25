@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dictionary-App-React/static/css/main.b43392dc.css",
-    "main.js": "/Dictionary-App-React/static/js/main.962fb90b.js",
+    "main.js": "/Dictionary-App-React/static/js/main.b1484c9e.js",
     "static/css/845.eb81674d.chunk.css": "/Dictionary-App-React/static/css/845.eb81674d.chunk.css",
     "static/js/845.b9562490.chunk.js": "/Dictionary-App-React/static/js/845.b9562490.chunk.js",
     "static/css/9.cfbf4c74.chunk.css": "/Dictionary-App-React/static/css/9.cfbf4c74.chunk.css",
@@ -15,7 +15,7 @@
     "static/js/692.14a4ed2c.chunk.js": "/Dictionary-App-React/static/js/692.14a4ed2c.chunk.js",
     "index.html": "/Dictionary-App-React/index.html",
     "main.b43392dc.css.map": "/Dictionary-App-React/static/css/main.b43392dc.css.map",
-    "main.962fb90b.js.map": "/Dictionary-App-React/static/js/main.962fb90b.js.map",
+    "main.b1484c9e.js.map": "/Dictionary-App-React/static/js/main.b1484c9e.js.map",
     "845.eb81674d.chunk.css.map": "/Dictionary-App-React/static/css/845.eb81674d.chunk.css.map",
     "845.b9562490.chunk.js.map": "/Dictionary-App-React/static/js/845.b9562490.chunk.js.map",
     "9.cfbf4c74.chunk.css.map": "/Dictionary-App-React/static/css/9.cfbf4c74.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.b43392dc.css",
-    "static/js/main.962fb90b.js"
+    "static/js/main.b1484c9e.js"
   ]
 }
