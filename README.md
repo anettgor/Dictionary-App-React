@@ -1,8 +1,8 @@
 # About
 
-This is a simple dictionary application that allows users to look up the
+This simple dictionary application allows users to look up the
 definitions, synonyms, and pronunciations of words. The app provides a
-user-friendly interface where users can type in a word of their choice and
+user-friendly interface where users can type a word of their choice and
 receive instant results.
 
 ## Features
@@ -16,7 +16,7 @@ receive instant results.
 - **Pronunciation**: The app offers the correct pronunciation of the word,
   enabling users to learn how to pronounce it accurately.
 - **Mode toggle**: The app allows users to toggle between light and dark mode,
-  and automativally selects the preffered mode set on user's machine.
+  and automatically selects the preferred mode set on the user's machine.
 
 ## Getting Started
 
@@ -37,8 +37,5 @@ receive instant results.
 - CSS
 
 ## Acknowledgements
-
-This app is powered by various online dictionaries and APIs, which provide the
-word information.
 
 - [DictionaryAPI](https://dictionaryapi.dev/)
